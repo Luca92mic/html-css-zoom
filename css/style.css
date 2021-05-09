@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 50px;
+    background-color:black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+button{
+    margin: 5px;
+    padding: 3px;
+}
+
+/* main */
+main{
+    height: calc(100vh - 150px);
+}
+
+/* persone */
+.people{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding:0 5px;
+    overflow-y: auto;
+}
+/* face */
+
+.face{
+    position: relative;
+    width: calc(100% / 6);
+    height: 150px;
+    border: 4px solid #000;
+}
+
+.face img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.face span i{
+    margin: 2px;
+}
+
+.face span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3px;
+}
+
+/* footer */
+footer{
+    height: 80px;
+    background-color: black;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    color: white;
+
+}
+footer i{
+    font-size:26px;
+    margin-bottom:4px;
+}
+
+.colonna, .col-centro, .col-button{
+    display: flex;
+    align-items: center;
+}
+
+.item{
+    text-align: center;
+    margin: 0 8px;
+    cursor:pointer;
+}
+
+.item-tool{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.col-button {
+    width: 10%;
+    background-color: rgb(92, 90, 90);
+    position: relative;
+}
+
+.btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    width: 80%;
+}
+
+.verde{
+    color: green;
+}
+
